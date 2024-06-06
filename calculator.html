@@ -11,9 +11,20 @@
     Second No :
     <input type="text" id="num2">
     <div>Result is <span id="result"></span></div>
-
+<button id="multiplyBtn">Multiply</button>
     <script>
-        
+        document.getElementById('multiplyBtn').onclick = function() {
+            // Get the values from the input fields
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            
+            // Check if the second number is zero to avoid division by zero
+            
+                // Perform the division
+                var result = num1 * num2;
+               
+                document.getElementById('result').textContent = result;
+        }
     </script>
 </body>
 </html>
